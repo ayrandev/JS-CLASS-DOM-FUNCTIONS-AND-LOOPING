@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let products = [
+
+            {
+                name: "Carregador",
+                cod: "123car",
+                price: 19.90,
+                qtd: 34
+            },
+
+
+            {
+                name: "Capa",
+                cod: "123cap",
+                price: 9.98,
+                qtd: 190
+            },
+
+
+            {
+                name: "Fones",
+                cod: "123fon",
+                price: 9.98,
+                qtd: 14
+            }
+
+        ]
+        
+        for (let index = 0; index < products.length; index++){
+            let product = products[index];
+            /*let msg = "Produto " + product.name + " custa " + product.price + " e um total de " + product.qtd + " em estoque.";*/
+            let msg = `
+Produto: ${product.name}
+Preço: ${product.price}
+Estoque: ${product.qtd}
+            `
+            console.log(msg);
+        }
+
+        
+
+
+
+
+        /*Ilet produtos = ["Produto 01", "Produto 02", "Produto 03", "Produto 04", "Produto 05"];
+
+        for (let index = produtos.length -1; index >= 0; index--){
+            console.log(produtos[index]);
+        }*/
+
+    </script>
+</body>
+
+</html>

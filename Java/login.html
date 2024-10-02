@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Java</title>
+</head>
+
+<body>
+    <script>
+        let bancoDeDados = [
+            "ayranvieira@gmail.com",
+            "123456"
+        ]
+        bancoDeDados = {
+            email: "ayranvieira@gmail.com",
+            senha: "123456"
+        }
+
+        let email = prompt("Digite seu email:");
+        if (email === bancoDeDados.email) {
+            let senha = prompt("Digite sua senha:");
+            if (senha === bancoDeDados.senha) {
+                alert("Logado com sucesso!");
+            }
+            else {
+                alert("Senha incorreta!");
+                location.reload();
+            }
+        }
+        else {
+            
+            alert("Email incorreto");
+            location.reload();
+        }
+
+
+    </script>
+</body>
+
+</html>
